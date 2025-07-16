@@ -1,76 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>discord.gg/3rog</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: url('https://media.discordapp.net/attachments/1391576243769704458/1395127712137482392/C0a5fD4WEAAOj9h.png?ex=6879516e&is=6877ffee&hm=bb82dea53cae39b1a087a67b4d78af8ab9a6133b3f9343d0198d0485cfad32fb&=&format=webp&quality=lossless') no-repeat center center fixed;
-            background-size: cover;
-            font-family: 'Courier New', Courier, monospace;
-            color: #000000;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>discord.gg/3rog</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://media.discordapp.net/attachments/1391576243769704458/1395127712137482392/C0a5fD4WEAAOj9h.png?ex=6879516e&is=6877ffee&hm=bb82dea53cae39b1a087a67b4d78af8ab9a6133b3f9343d0198d0485cfad32fb&=&format=webp&quality=lossless') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Courier New', Courier, monospace;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
 
-        .image-container img {
-            width: 850x;
-            height: auto;
-            border: 2px solid #00000000;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0);
-        }
+    .image-container img {
+      width: 850px;
+      height: auto;
+      border-radius: 10px;
+    }
 
-        .info {
-            margin-top: 20px;
-            font-size: 1.5em;
-            color: #000000;
-            text-shadow: 0px 0px 8px #000000, 0px 0px 15px #000000;
-        }
+    .info {
+      margin-top: 20px;
+      font-size: 1.5em;
+      color: #000;
+      text-shadow: 0 0 8px #000, 0 0 15px #000;
+    }
 
-        .text {
-            margin-top: 20px;
-            font-size: 3em;
-            color: #ffffff;
-            text-shadow: 0px 0px 8px #000000, 0px 0px 15px #000000;
-            letter-spacing: 4.5px;
-        }
-    </style>
+    .text {
+      margin-top: 20px;
+      font-size: 3em;
+      color: #fff;
+      text-shadow: 0 0 8px #000, 0 0 15px #000;
+      letter-spacing: 4.5px;
+    }
+  </style>
 </head>
 <body>
+  <div class="image-container">
+    <img src="https://images-ext-1.discordapp.net/external/hN4eMVK93015IR6JtEK82KlvcG7rnyokxtR5mXmdIJU/https/k.top4top.io/p_34842o33z1.png?format=webp&quality=lossless" alt="Discord Promo" />
+  </div>
 
-    <div class="image-container">
-        <img src="https://images-ext-1.discordapp.net/external/hN4eMVK93015IR6JtEK82KlvcG7rnyokxtR5mXmdIJU/https/k.top4top.io/p_34842o33z1.png?format=webp&quality=lossless" alt="Discord Image">
-    </div>
+  <audio autoplay loop>
+    <source src="43/3rogg.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
 
-    <audio autoplay loop>
-        <source src="43/3rogg.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+  <div class="info" id="ip-info">IP: Loading...</div>
 
-    <div class="info" id="ip-info">IP: Loading...</div>
+  <div class="text">discord.gg/3rog</div>
 
-    <div class="text">discord.gg/3rog</div>
-
-    <script>
-        fetch('https://ipinfo.io/json')
-        .then(response => response.json())
-        .then(data => {
-            delete data.readme;
-            const infoDiv = document.getElementById('ip-info');
-            infoDiv.textContent = `IP: ${data.ip} | Location: ${data.city}, ${data.country}`;
-        })
-        .catch(() => {
-            document.getElementById('ip-info').textContent = "Failed to load IP info.";
-        });
-    </script>
-
+  <script>
+    fetch('https://ipinfo.io/json')
+      .then((response) => response.json())
+      .then((data) => {
+        const infoDiv = document.getElementById('ip-info');
+        infoDiv.textContent = `IP: ${data.ip} | Location: ${data.city}, ${data.country}`;
+      })
+      .catch(() => {
+        document.getElementById('ip-info').textContent = "Failed to load IP info.";
+      });
+  </script>
 </body>
 </html>

@@ -8,7 +8,7 @@
     body {
       margin: 0;
       padding: 0;
-      background: url('https://media.discordapp.net/attachments/1391576243769704458/1395127712137482392/C0a5fD4WEAAOj9h.png?ex=6879516e&is=6877ffee&hm=bb82dea53cae39b1a087a67b4d78af8ab9a6133b3f9343d0198d0485cfad32fb&=&format=webp&quality=lossless') no-repeat center center fixed;
+      background: url('https://e.top4top.io/p_3495owtu22.png') no-repeat center center fixed;
       background-size: cover;
       font-family: 'Courier New', Courier, monospace;
       color: #000;
@@ -44,7 +44,7 @@
 </head>
 <body>
   <div class="image-container">
-    <img src="https://images-ext-1.discordapp.net/external/hN4eMVK93015IR6JtEK82KlvcG7rnyokxtR5mXmdIJU/https/k.top4top.io/p_34842o33z1.png?format=webp&quality=lossless" alt="Discord Promo" />
+    <img src="https://d.top4top.io/p_3495vvxv91.png" alt="Discord Promo" />
   </div>
 
   <audio autoplay loop>
